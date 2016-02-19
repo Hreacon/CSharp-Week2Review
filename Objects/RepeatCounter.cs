@@ -8,12 +8,16 @@ namespace RepeatCounterNS.Objects
     {
     }
     
-    public int CountRepeats(string sentence, string word)
+    public int CountRepeats(string sentence, string testWord)
     {
         int count = 0;
-        if(sentence.Contains(word))
+        string[] words = sentence.Split(' ');
+        foreach(string word in words)
         {
-            count++;
+            if(word.Contains(testWord))
+            {
+                count++;
+            }
         }
         return count;
     }
