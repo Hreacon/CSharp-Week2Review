@@ -12,6 +12,15 @@ namespace RepeatCounterNS
         RepeatCounter count = new RepeatCounter();
         Assert.Equal(1, count.CountRepeats("word", "word"));
     }
+    
+    // Ignore other words. Input "This word", "word". Output 1.
+    // Simplest input because only contains one match
+    [Fact]
+    public void CountRepeats_IgnoresOtherWords()
+    {
+        RepeatCounter count = new RepeatCounter();
+        Assert.Equal(1, count.CountRepeats("This word", "word"));
+    }
     /* EXAMPLE
     // Have a queen object that knows what coordinants its at
     [Fact]
