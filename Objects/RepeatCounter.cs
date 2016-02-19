@@ -13,12 +13,9 @@ namespace RepeatCounterNS.Objects
     public int CountRepeats(string sentence, string testWord)
     {
       int count = 0;
-      // setup regex pattern
-      string[] words = sentence.Split(' ');
-      Regex rgx = new Regex("[\\p{P}-\\^]+");
-      foreach(string word in words)
+      foreach(string word in sentence.Split(' '))
       {
-        if(rgx.Replace(word.ToLower(), "") == testWord.ToLower())
+        if(Regex.Replace(word.ToLower(), "[\\p{P}-\\^]+", "") == testWord.ToLower())
         {
             count++;
         }
