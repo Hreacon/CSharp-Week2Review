@@ -10,16 +10,16 @@ namespace RepeatCounterNS.Objects
     
     public int CountRepeats(string sentence, string testWord)
     {
-        int count = 0;
-        string[] words = sentence.Split(' ');
-        foreach(string word in words)
+      int count = 0;
+      string[] words = sentence.Split(' ');
+      foreach(string word in words)
+      {
+        if(word.Contains(testWord))
         {
-            if(word.Contains(testWord))
-            {
-                count++;
-            }
+            count++;
         }
-        return count;
+      }
+      return count;
     }
   } // end class
 } // end namespace
