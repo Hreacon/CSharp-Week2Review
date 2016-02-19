@@ -1,0 +1,13 @@
+@Html.Partial("header.cshtml")
+
+<h1>Count how many times a word appears in sentence</h1>
+@if(@Model.GetWord().Length > 0)
+{
+  <p>The word "@Model.GetWord()" appears <strong>@Model.GetCount()</strong> times in the provided sentence.</p>
+}
+<form action="/" method="post" id="countRepeats">
+  <label for="sentence">Sentence:</label><input type="text" name="sentence" value="@Model.GetSentence()">
+  <p>Choose a word to look for:</p><div class="wordOptions"></div>
+  <label for="testWord">Or type one in</label><input type="text" name="testWord" id="testWord" value="">
+  <input type="submit" name="submit" value="Search String">
+</form>
