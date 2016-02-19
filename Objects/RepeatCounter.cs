@@ -11,7 +11,7 @@ namespace RepeatCounterNS.Objects
     public int CountRepeats(string sentence, string word)
     {
         int count = 0;
-        if(sentence == word)
+        if(sentence.Contains(word))
         {
             count++;
         }
