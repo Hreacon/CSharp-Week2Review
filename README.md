@@ -1,26 +1,23 @@
-# _{Application Name}_
+# RepeatCounter
 
-#### _{Brief description of application}, {Date of current version}_
+#### Counts the occurances of a substring in a string, 2/19/2016
 
-#### By Nicholas Jensen-Hay and PAIR
+#### By Nicholas Jensen-Hay
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+Counts the occurances of a substring in a string. You can provide the substring or click on the words that appear as you type. 
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+https://www.learnhowtoprogram.com/c/getting-started-with-c/installing-c
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+Please see this guide as provided by epicodus. After completing those steps, clone this repositor and run in a Powershell dnx kestrel, then visit your web browser at
+http://localhost:5004
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+No known issues. If there are any please report them to me using contact details below.
 
 ## Support and contact details
 
@@ -28,11 +25,11 @@ Contact Nicholas Jensen-Hay through Github at http://github.com/hreacon/
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+C#, Nancy, Razor, Javascript, jQuery
 
 ### License
 
-Copyright (c) 2016 Nicholas Jensen-Hay and PAIR
+Copyright (c) 2016 Nicholas Jensen-Hay
 
 MIT License
 
