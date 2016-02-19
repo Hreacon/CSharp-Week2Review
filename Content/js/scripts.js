@@ -16,8 +16,9 @@ function updateWordChoices(char)
   var uniqueWords = [];
   $.each(sentence.split(' '), function (index, word) {
     // alert(uniqueWords + " " + $.inArray(uniqueWords, word) + " " +word);
-    if(!uniqueWords.contains(word) && word.length > 0)
-      uniqueWords.push(word);
+    var word2 = word.replace(/[^\w\s]|_/g, "");
+    if(!uniqueWords.contains(word2) && word2.length > 0)
+      uniqueWords.push(word2);
   });
   uniqueWords.forEach(function(word) {
     if(word.length > 0)

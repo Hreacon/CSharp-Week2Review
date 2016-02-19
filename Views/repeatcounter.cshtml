@@ -8,6 +8,6 @@
 <form action="/" method="post" id="countRepeats">
   <label for="sentence">Sentence:</label><input type="text" name="sentence" value="@Model.GetSentence()">
   <p>Choose a word to look for:</p><div class="wordOptions"></div>
-  <label for="testWord">Or type one in</label><input type="text" name="testWord" id="testWord" value="">
+  <div class="rightcol"><label for="testWord">Or type one in</label><input type="text" name="testWord" id="testWord" value=""></div>
   <input type="submit" name="submit" value="Search String">
 </form>

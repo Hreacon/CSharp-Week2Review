@@ -28,7 +28,7 @@ namespace RepeatCounterNS.Objects
       int count = 0;
       foreach(string word in sentence.Split(' '))
       {
-        if(Regex.Replace(word.ToLower(), "[\\p{P}-\\^]+", "") == testWord.ToLower())
+        if(Regex.Replace(word.ToLower(), "[\\p{P}-\\^]+", "") == Regex.Replace(testWord.ToLower(), "[\\p{P}-\\^]+", ""))
         {
             count++;
         }

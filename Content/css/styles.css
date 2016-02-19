@@ -32,6 +32,9 @@ input {
   color:white;
   background: black;
 }
+.rightcol {
+  clear:both;
+}
 .word {
   display: block;
   float:left;
