@@ -8,7 +8,7 @@ namespace RepeatCounterNS
     public HomeModule()
     {
       Get["/"] = _ => {
-        return View["header.cshtml"];
+        return View["repeatCounter.cshtml", new RepeatCounter()];
       };
     }
   }

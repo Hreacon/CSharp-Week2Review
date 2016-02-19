@@ -11,6 +11,8 @@ namespace RepeatCounterNS.Objects
     private int _count;
     public RepeatCounter()
     {
+      _sentence = "";
+      _testWord = "";
     }
     public string GetSentece() { return _sentence; }
     public string GetWord() {return _testWord; }
