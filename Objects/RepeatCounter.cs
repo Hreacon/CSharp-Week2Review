@@ -14,7 +14,7 @@ namespace RepeatCounterNS.Objects
       _sentence = "";
       _testWord = "";
     }
-    public string GetSentece() { return _sentence; }
+    public string GetSentence() { return _sentence; }
     public string GetWord() {return _testWord; }
     public int GetCount() {return _count; }
     public void Save(string sentence, string testWord, int count)
