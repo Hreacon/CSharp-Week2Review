@@ -14,7 +14,7 @@ namespace RepeatCounterNS.Objects
       string[] words = sentence.Split(' ');
       foreach(string word in words)
       {
-        if(word == testWord)
+        if(word.ToLower() == testWord.ToLower())
         {
             count++;
         }
