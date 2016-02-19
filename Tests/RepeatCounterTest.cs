@@ -2,7 +2,9 @@ using Xunit;
 using RepeatCounterNS.Objects;
 namespace RepeatCounterNS
 {
-    // Test a single word, input "word", "word". Output 1.
+  public class RepeatCounterTest
+  {
+      // Test a single word, input "word", "word". Output 1.
     // This is the simplest way to test this function because there is only one input word.
     [Fact]
     public void CountRepeats_CountsOneWord()
@@ -10,9 +12,6 @@ namespace RepeatCounterNS
         RepeatCounter count = new RepeatCounter();
         Assert.Equal(1, count.CountRepeats("word", "word"));
     }
-
-  public class RepeatCounterTest
-  {
     /* EXAMPLE
     // Have a queen object that knows what coordinants its at
     [Fact]
