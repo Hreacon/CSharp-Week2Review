@@ -6,10 +6,21 @@ namespace RepeatCounterNS.Objects
 {
   public class RepeatCounter
   {
+    private string _sentence;
+    private string _testWord;
+    private int _count;
     public RepeatCounter()
     {
     }
-    
+    public string GetSentece() { return _sentence; }
+    public string GetWord() {return _testWord; }
+    public int GetCount() {return _count; }
+    public void Save(string sentence, string testWord, int count)
+    {
+      _sentence = sentence;
+      _testWord = testWord;
+      _count = count;
+    }
     public int CountRepeats(string sentence, string testWord)
     {
       int count = 0;
