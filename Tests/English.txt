@@ -1,0 +1,28 @@
+Class RepeatCounter
+Method CountRepeats(string sentence, string word)
+
+Test a single word, input "word", "word". Output 1.
+This is the simplest way to test this function because there is only one input word.
+
+Ignore other words. Input "This word", "word". Output 1.
+Simplest input because only contains one match
+This can be done using a simple indexof or contains, because it still only contains one match
+
+Count multiple words. Input "This word word", "word". Output 2.
+Simplest input because matching two exact words
+This can be done by wrapping previous if in a loop iterating over the string broken up by spaces.
+
+Don't count partial matches. Input "this wordy word", "word". Output 1.
+simplest input because matching one word while ignoring one partial
+A simple if statement change can correct this
+
+Be case insensitive. Input "Word wordy word", "word". Output 2.
+Simplest next step because taking into account one way to break it at a time, in this case case sensitivity
+Change the conditional again and bring both cases to lower.
+
+Don't include punctuation. Input "Word wordy word.", "word". Output 2.
+Simplest next step because taking into account one way to break it at a time, in this case punctuation
+Change the conditional to include something to strip punctuation out of the tested sentece.
+
+Last test. Input "'tEsT. sentence is tEsTing the ?tEsT' a bility of tEsTing the program that tEsTs for string [tEsT] occurances in tEsT; string tEsTy tEsT^ 'tEsT.", "test". Output 7
+This is not simple. Its trying to break the program.
